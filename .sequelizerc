@@ -1,0 +1,9 @@
+// .sequelizerc
+
+const path = require('path');
+
+module.exports = {
+  'config': path.resolve('dist','infra','config', 'authDB.js'),
+  'seeders-path': path.resolve('dist','infra','database', 'seeders'),
+  'migrations-path': path.resolve('dist', 'infra','database','migrations')
+};
